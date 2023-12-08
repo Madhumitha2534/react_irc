@@ -1,0 +1,23 @@
+/*Write a JavaScript function that generates all combinations of a string "joy".
+*/
+
+function generateCombinations(str) {
+  const result = [];
+
+  function backtrack(current, start) {
+    result.push(current);
+
+    for (let i = start; i < str.length; i++) {
+      backtrack(current + str[i], i + 1);
+    }
+  }
+
+  backtrack('', 0);
+
+  return result.join(' ');
+}
+
+
+const inputString = 'joy';
+const combinations = generateCombinations(inputString);
+console.log(combinations);
