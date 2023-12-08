@@ -1,0 +1,34 @@
+CONCEPT::
+
+/*Modules help improve the maintainability, readability, and reusability of code by allowing developers to encapsulate related functionality and expose only what is necessary for external use.
+JavaScript modules introduce the import and export keywords, which enable you to import functionality from other files (modules) and export functionality to be used elsewhere.*/
+
+/*write a javascript program to calculate the sum of the elements in given array 1 to 5*/
+
+--------------------------------------
+// mathModule.js
+export function calculateSum(values) {
+  return values.reduce((acc, currentValue) => acc + currentValue, 0);
+}
+---------------------------------
+// main.js
+import { calculateSum } from './mathModule.js';
+
+// Example usage
+const values = [1, 2, 3, 4, 5];
+const sum = calculateSum(values);
+
+console.log(sum);
+-------------------------------------------------------
+
+///      BOTH THE INPUT AND OUTPUT ARE PRESENT HERE:
+
+function calculateSum(values) {
+  return values.reduce((acc, currentValue) => acc + currentValue, 0);
+}
+
+
+const values = [1, 2, 3, 4, 5];
+const sum = calculateSum(values);
+
+console.log(sum);
