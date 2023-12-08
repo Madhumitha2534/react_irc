@@ -1,0 +1,40 @@
+/*CONCEPT:DOM, or Document Object Model, is a programming interface provided by browsers that allows JavaScript to interact with and manipulate HTML and 
+XML documents. JavaScript can dynamically change the content, structure, and style of a web page by interacting with the DOM.*/
+
+//QN: write a simple javascript dom to add simple numbers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Number Addition</title>
+</head>
+<body>
+
+  <label for="number1">Number 1:</label>
+  <input type="number" id="number1">
+
+  <label for="number2">Number 2:</label>
+  <input type="number" id="number2">
+
+  <button onclick="addNumbers()">Add Numbers</button>
+
+  <p id="result">Result: </p>
+
+  <script>
+    function addNumbers() {
+     
+      var number1 = parseFloat(document.getElementById('number1').value) || 0;
+      var number2 = parseFloat(document.getElementById('number2').value) || 0;
+
+     
+      var result = number1 + number2;
+
+      
+      document.getElementById('result').innerText = 'Result: ' + result;
+    }
+  </script>
+
+</body>
+</html>
