@@ -21,7 +21,7 @@ const sum = calculateSum(values);
 console.log(sum);
 -------------------------------------------------------
 
-///      BOTH THE INPUT AND OUTPUT ARE PRESENT HERE:
+///      BOTH THE IMPORT AND EXPORT FILE ARE PRESENT HERE:
 
 function calculateSum(values) {
   return values.reduce((acc, currentValue) => acc + currentValue, 0);
