@@ -1,0 +1,80 @@
+/* loginapp.css */
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#84c9ef,#b4d2ed,#cbbddd,#dcb5d4,#e3b1d2);
+  
+  
+}
+
+.login-container {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #975757;
+  box-shadow: 0 0 10px rgba(45, 2, 2, 0.1);
+  background-color: rgb(227, 235, 243);
+}
+
+.left-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.left-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+p:hover {
+  text-decoration: underline;
+}
